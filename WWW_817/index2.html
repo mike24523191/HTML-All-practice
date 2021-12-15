@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>台南美景欣賞</title>
+<style type="text/css">
+ body {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-image:url(bg1.png);
+ }
+ .header {
+	height: 75px;
+	width: 100%;
+	color:#FFF;
+	font-size:4rem;
+ }
+ .w {
+	height: 800px;
+	width: 1100px;
+	margin: 30px auto 80px;
+ }
+ .main {
+	display: block;
+	float: right;
+	width: 800px;
+ }
+ .slidemenu {
+	float: left;
+	height: 800px;
+	width: 300px;
+	position: fixed;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-position:bottom;
+ }
+.slidemenu a {
+	display:inline-block;
+	color:#ccc;
+	font-size:1.5rem;
+	height:32px;
+	width:105px;
+	line-height:42px;
+	border-radius:8px;
+	text-decoration:none;
+	text-align:center;
+	transition:0.15s;
+	}
+.slidemenu a:hover {
+		background-color:#F93;
+		color:#FFF;
+	}
+.footer {
+	position: fixed;
+	z-index: 3;
+	height: 250px;
+	width: 100%;
+    right : 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity:0.85;
+	color:#FFF;
+	background-image:url(bgm.png);
+}
+.f {
+	height: 250px;
+	width: 1400px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;	
+}
+.fm{
+	color: #FFF;
+	background-color: #003399;
+	display: block;
+	float: left;
+	width: 1100px;
+}
+.fg{
+	float:left;
+	width:300px;
+	height:250px;
+	background-image:url(M1_4.png)
+}
+</style>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body>
+<div class="header">老台南</div>
+<div class="w">
+<div class="slidemenu">
+台南古蹟<p>
+<a href="#" onClick="MM_swapImage('p2','','p2_1.png',0)">孔廟</a><P>
+<a href="#" onClick="MM_swapImage('p2','','p2_2.png',0)">安平古堡</a><P>
+<a href="#" onClick="MM_swapImage('p2','','p2_3.png',0)">赤崁樓</a><P>
+<a href="#" onClick="MM_swapImage('p2','','p2_4.png',0)">林百貨</a><P>
+<a href="#" onClick="MM_swapImage('p2','','p2_5.png',0)">知事館</a><P>
+<a href="#" onClick="MM_swapImage('p2','','p2_6.png',0)">億載金城</a><P>
+<a href="#" onClick="MM_swapImage('p2','','p2_7.png',0)">靖波門</a><P>
+</div>
+<div class="main"><img src="p2.png" name="p2" id="p2"></div>
+
+</div>
+<div class="footer">
+<div class="f">
+<div class="fm">
+footer
+</div>
+<div class="fg">
+</div>
+</div>
+</div>
+</body>
+</html>

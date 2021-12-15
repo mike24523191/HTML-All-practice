@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+<style>
+
+body {
+	margin:0;
+	background-image:url(img/bg4.png);
+	background-size:cover;
+	height:100vh;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	font-size:1.2rem;
+	line-height:2rem;
+	color:#FFF;
+}
+.h {
+	height: 300px;
+	margin: 60px auto 0px;
+	text-align: center;
+}
+.w1 {
+	width:900px;
+	margin:80px auto 60px;
+	display:flex;
+}
+.w2 {
+	width:900px;
+	height:570px;
+	border-radius:10px; 
+	padding:30px;
+	background-color:#000;
+	column-gap:3em;
+	column-count:2;
+	box-shadow:0px 0px 15px #ffff99;
+	column-rule:thin dashed #cccccc;
+	opacity:0.8;
+}
+
+.box {
+	visibility:hidden;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:0;
+	background:rgba(0,0,0,0.7);
+}
+.box:target {
+	visibility:visible;
+	opacity:1;
+	transition:opacity 2s
+}
+#outer {
+	width:min-content;
+	background-color:#FFF;
+	margin:auto;
+	margin-top:260px;
+	border-radius:8px;
+	box-shadow:0px 0px 40px #000;
+}
+#inner {
+	padding:20px;
+}
+#cross {
+	float:right;
+}
+.footer {
+	position:fixed;
+	z-index:3px;
+	height:200px;
+	width:100%;
+	left:0px;
+	right:0px;
+	top:0px;
+	background-image:url(img/bgm.png);
+}
+.f {
+	width:1200px;
+	height:250px;
+	margin:0px auto 0px;
+}
+.t1 {
+	font-size: 1.4rem;
+	color: #FF6;
+}
+.t2 {
+	font-size: 2rem;
+	color: #CFF;
+}
+</style>
+</head>
+
+<script language="JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_nbGroup(event, grpName) { //v6.0
+var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])?args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) { img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr) for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_preloadImages() { //v3.0
+ var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+   var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+   if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+//-->
+</script>
+
+<body>
+<div class="h"><img src="img/bgm_3.png"></div>
+<div class="w1">
+<div class="w2">
+<span class="t1">活動開始時間</span>
+<p>
+106/10/10至106/11/18 上午8:00~下午7:00<p class="t1">
+活動內容</p>
+<ul>
+  <li>  為了讓民眾們更加認識我們臺灣的道地特色美食，而出現的「名產小吃」活動開始啦!!!    </li>
+  <li>民眾們只要於活動時間內，抵達彰化的鹿港天后宮，就可以獲得特色小吃一份。</li>
+  <li>每天的活動特色小吃都不相同，活動共有40天，也就是說共有40種特色小吃等著你來享用它們。</li>
+ 
+</ul>
+ <p><span class="t1">活動地點</span></P>
+  <a href="#box1"><img src="img/鹿港天后宮.jpg" width="150"></a>
+  <p class="t1">活動須知
+<ol>
+  <li>
+    抵達現場時，活動工作人員會發放號碼牌，請耐心等候。</li>
+  <li>部分小吃是有限量的，請民眾多多留意。</li>
+  <li>當活動人數眾多時，請民眾多留意身上財物，本活動不負責民眾遺失物賠償。</li>
+</ol>
+&nbsp;<p>
+<span class="t1">聯絡資訊</span>
+<P>
+彰化鹿港天后宮 0800-092-000<p>
+<span class="t2">孰可忍孰不可忍!<br>
+
+美食當前你還不出發!!!
+ </span>
+</div>
+</div>
+
+
+<div class="box" id="box1">
+  <div id="outer">
+  <a href="#" id="cross"><img src="img/X.png" width="25" /></a>
+    <div id="inner"><img src="img/鹿港天后宮.jpg" width="900"></div>
+  </div>
+</div>
+
+
+</div>
+
+
+<div class="footer">
+  <div class="f">
+  <table border="0" cellpadding="0" cellspacing="0" width="1200">
+
+  <tr>
+   <td><img name="m_r1_c1" src="images/m_r1_c1.png" width="240" height="250" border="0" alt=""></td>
+   <td><a href="index.html" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','m_r1_c2','images/m_r1_c2_f2.png','images/m_r1_c2_f3.png',1);" onClick="MM_nbGroup('down','navbar1','m_r1_c2','images/m_r1_c2_f3.png',1);"><img name="m_r1_c2" src="images/m_r1_c2.png" width="160" height="250" border="0" alt=""></a></td>
+   <td><a href="web1.html" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','m_r1_c3','images/m_r1_c3_f2.png','images/m_r1_c3_f3.png',1);" onClick="MM_nbGroup('down','navbar1','m_r1_c3','images/m_r1_c3_f3.png',1);"><img name="m_r1_c3" src="images/m_r1_c3.png" width="160" height="250" border="0" alt=""></a></td>
+   <td><a href="web2.html" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','m_r1_c4','images/m_r1_c4_f2.png','images/m_r1_c4_f3.png',1);" onClick="MM_nbGroup('down','navbar1','m_r1_c4','images/m_r1_c4_f3.png',1);"><img name="m_r1_c4" src="images/m_r1_c4.png" width="160" height="250" border="0" alt=""></a></td>
+   <td><a href="web3.html" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','m_r1_c5','images/m_r1_c5_f2.png','images/m_r1_c5_f3.png',1);" onClick="MM_nbGroup('down','navbar1','m_r1_c5','images/m_r1_c5_f3.png',1);"><img name="m_r1_c5" src="images/m_r1_c5.png" width="160" height="250" border="0" alt=""></a></td>
+   <td><a href="web4.html" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','m_r1_c6','images/m_r1_c6_f2.png','images/m_r1_c6_f3.png',1);" onClick="MM_nbGroup('down','navbar1','m_r1_c6','images/m_r1_c6_f3.png',1);"><img name="m_r1_c6" src="images/m_r1_c6.png" width="160" height="250" border="0" alt=""></a></td>
+   <td><a href="web5.asp" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','m_r1_c7','images/m_r1_c7_f2.png','images/m_r1_c7_f3.png',1);" onClick="MM_nbGroup('down','navbar1','m_r1_c7','images/m_r1_c7_f3.png',1);"><img name="m_r1_c7" src="images/m_r1_c7.png" width="160" height="250" border="0" alt=""></a></td>
+   <td><img src="images/spacer.gif" width="1" height="250" border="0" alt=""></td>
+  </tr>
+</table>
+  </div>
+</div>
+</body>
+</html>

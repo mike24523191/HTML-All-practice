@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+<style type="text/css">
+body {
+	background-image: url(bg.png);
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.ss{
+   position:absolute;
+	 }
+	 .lay1,.lay2 {
+		 position:absolute;
+		 width:1200px;
+		 height:1000px;
+		 top:0;
+		 left:0;
+		 background-size:cover;
+		 background-repeat:no-repeat;
+	 }
+	  .lay1{
+	background-image: url(m1_1.png);
+	animation:lay1A  10s;
+	  }
+	  .lay2{
+	background-image: url(m1_2.png);
+	animation:lay2A  10s;
+	  }
+	  @keyframes lay1A {
+		 0%{
+			 opacity:0;
+		 }
+		 30%{
+			 opacity:1;
+		 }
+		 50%{
+			 opacity:1;
+		 }
+		 100%{
+			 opacity:1;
+		 }
+	  }
+		 @keyframes lay2A {
+		 0%{
+			 opacity:0
+		 }
+		 30%{
+			 opacity:0;
+		 }
+		 50%{
+			 opacity:0;
+		 }
+		 100%{
+			 opacity:1;
+		 }
+	}
+</style>
+</head>
+
+<body>
+   <div class="ss">  
+    <div class="lay1"></div>
+    <div class="lay2"></div>
+</div>
+</body>
+</html>

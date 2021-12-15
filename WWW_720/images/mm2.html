@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('park0302.jpg','park0303.jpg','park0305.jpg')">
+<table width="500" border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="national_park.jpg" width="452" height="631" usemap="#Map"></td>
+    <td><img src="park0302.jpg" name="p1" width="327" height="71" id="p1"></td>
+  </tr>
+</table>
+
+<map name="Map">
+  <area shape="rect" coords="215,44,344,80" href="#" onClick="MM_swapImage('p1','','park0302.jpg',1)">
+  <area shape="circle" coords="296,202,22" href="#" onClick="MM_swapImage('p1','','park0303.jpg',1)">
+  <area shape="poly" coords="253,375,250,350,266,343,283,344,293,361,305,371,303,384,285,388,260,389,251,394,246,385" href="#" onClick="MM_swapImage('p1','','park0305.jpg',1)">
+</map>
+</body>
+</html>
